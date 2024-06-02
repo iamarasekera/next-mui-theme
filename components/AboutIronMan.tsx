@@ -7,7 +7,7 @@ const AboutIronMan: React.FC = () => {
   const theme = useTheme();
   const isMobileView = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const aboutIronMan = "Tony Stark, much like Peter Parker, faces a whirlwind of personal and superheroic challenges. Balancing the demands of being Iron Man with his personal life proves to be a constant struggle. Stark juggles his responsibilities as a billionaire industrialist, philanthropist, and superhero while navigating complex relationships. His romantic entanglements, notably with Pepper Potts, add layers of depth to his character and have often been focal points of his storylines. Additionally, Stark's inner demons, stemming from his past as a weapons manufacturer and his struggles with alcoholism, contribute to the complexity of his character and the challenges he faces both in and out of the armor."
+  const aboutIronMan = "Tony Stark, much like Peter Parker, faces a whirlwind of personal and superheroic challenges. Balancing the demands of being Iron Man with his personal life proves to be a constant struggle. Stark juggles his responsibilities as a billionaire industrialist, philanthropist, and superhero while navigating complex relationships. His romantic entanglements, notably with Pepper Potts, add layers of depth to his character and have often been focal points of his storylines. Additionally, Stark's inner demons, stemming from his past as a weapons manufacturer and his struggles with alcoholism, contribute to the complexity of his character and the challenges he faces both in and out of the armor.";
 
   return (
     <Grid container sx={{ padding: 4, backgroundColor: 'white' }}>

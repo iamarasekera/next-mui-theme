@@ -1,7 +1,10 @@
 "use client"
 import { Grid, Typography, Button } from '@mui/material';
-//New comment
+
 const HeroBanner: React.FC = () => {
+
+  const aboutSuperHeros = "Superheroes, as depicted in comic books, movies, and other forms of media, are fictional characters created for entertainment purposes. While they often possess extraordinary abilities and embark on heroic adventures, they do not exist in reality. However, the themes and values embodied by superheroes, such as bravery, justice, and selflessness, can inspire people in real life to strive for similar ideals and make positive contributions to their communities.";
+
   return (
     <Grid
       container
@@ -26,14 +29,13 @@ const HeroBanner: React.FC = () => {
         }}
       >
         <Typography variant="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
-          Hero Banner
+          Super Heros
         </Typography>
         <Typography variant="h2" sx={{ mb: 2 }}>
-          Subtitle
+          Are they real?
         </Typography>
         <Typography variant="body1" sx={{ mb: 4 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut risus in
-          augue luctus venenatis.
+          {aboutSuperHeros}
         </Typography>
         <Button
           variant="contained"
@@ -43,7 +45,7 @@ const HeroBanner: React.FC = () => {
             whiteSpace: 'nowrap', // Prevent the button from wrapping
           }}
         >
-          Click Me
+          Read More
         </Button>
       </Grid>
     </Grid>
