@@ -3,9 +3,11 @@
 import { Grid, Typography, Button, useTheme, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 
-const AboutBearsT: React.FC = () => {
+const AboutIronMan: React.FC = () => {
   const theme = useTheme();
   const isMobileView = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const aboutIronMan = "Tony Stark, much like Peter Parker, faces a whirlwind of personal and superheroic challenges. Balancing the demands of being Iron Man with his personal life proves to be a constant struggle. Stark juggles his responsibilities as a billionaire industrialist, philanthropist, and superhero while navigating complex relationships. His romantic entanglements, notably with Pepper Potts, add layers of depth to his character and have often been focal points of his storylines. Additionally, Stark's inner demons, stemming from his past as a weapons manufacturer and his struggles with alcoholism, contribute to the complexity of his character and the challenges he faces both in and out of the armor."
 
   return (
     <Grid container sx={{ padding: 4, backgroundColor: 'white' }}>
@@ -22,10 +24,10 @@ const AboutBearsT: React.FC = () => {
         }}
       >
         <Typography variant="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
-          About Bears
+          Iron Man
         </Typography>
         <Typography variant="body1" sx={{ mb: 4 }}>
-          There are 3 types of bears in the world.
+          {aboutIronMan}
         </Typography>
         <Button
           variant="contained"
@@ -35,7 +37,7 @@ const AboutBearsT: React.FC = () => {
             whiteSpace: 'nowrap',
           }}
         >
-          Click Me
+          Learn More
         </Button>
       </Grid>
 
@@ -53,7 +55,7 @@ const AboutBearsT: React.FC = () => {
         }}
       >
         <Image
-          src="/images/bear.png"
+          src="/images/ironman.png"
           alt="Bear"
           width={300}
           height={300}
@@ -69,4 +71,4 @@ const AboutBearsT: React.FC = () => {
   );
 };
 
-export default AboutBearsT;
+export default AboutIronMan;

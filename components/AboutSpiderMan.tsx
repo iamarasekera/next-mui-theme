@@ -3,7 +3,7 @@
 import { Grid, Typography, Button, useTheme, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 
-const AboutBears: React.FC = () => {
+const AboutSpiderMan: React.FC = () => {
   const theme = useTheme();
   const isMobileView = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -75,4 +75,4 @@ const AboutBears: React.FC = () => {
   );
 };
 
-export default AboutBears;
+export default AboutSpiderMan;
