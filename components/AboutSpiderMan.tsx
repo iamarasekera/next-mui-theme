@@ -7,6 +7,8 @@ const AboutBears: React.FC = () => {
   const theme = useTheme();
   const isMobileView = useMediaQuery(theme.breakpoints.down('sm'));
 
+  const aboutSpiderMan = "Peter Parker's personal life is as complex as his superhero adventures. He grapples with the responsibility of balancing his crime-fighting duties with his personal relationships and struggles to make ends meet as a freelance photographer for the Daily Bugle newspaper. His romantic entanglements, particularly with characters like Mary Jane Watson and Gwen Stacy, have been central to many of his storylines."
+
   return (
     <Grid
       container
@@ -29,7 +31,7 @@ const AboutBears: React.FC = () => {
         }}
       >
         <Image
-          src="/images/bear.png"
+          src="/images/spiderman.webp"
           alt="Bear"
           width={300}
           height={300}
@@ -53,10 +55,10 @@ const AboutBears: React.FC = () => {
         }}
       >
         <Typography variant="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
-          About Bears
+          Spider Man
         </Typography>
         <Typography variant="body1" sx={{ mb: 4 }}>
-          There are 3 types of bears in the world.
+          {aboutSpiderMan}
         </Typography>
         <Button
           variant="contained"
@@ -66,7 +68,7 @@ const AboutBears: React.FC = () => {
             whiteSpace: 'nowrap', // Prevent the button from wrapping
           }}
         >
-          Click Me
+          Learn More
         </Button>
       </Grid>
     </Grid>
