@@ -4,13 +4,12 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   typography: {
     h1: {
-      fontFamily: 'Merriweather, serif', // Change to Merriweather
+      fontFamily: 'Merriweather, serif',
       fontWeight: 700,
-      fontSize: '5rem',
       lineHeight: 1.2,
     },
     body1: {
-      fontFamily: 'Montserrat, sans-serif', // Change to Montserrat
+      fontFamily: 'Montserrat, sans-serif',
       fontWeight: 400,
       fontSize: '1rem',
       lineHeight: 1.5,
@@ -32,5 +31,32 @@ const theme = createTheme({
   },
   // Other theme configurations
 });
+
+
+// Update the h1 typography variant with breakpoints
+/*Mobile screens: 2rem
+  Tablet screens: 3rem
+  Web view: 5rem*/
+
+theme.typography.h1 = {
+  ...theme.typography.h1,
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '3rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '5rem',
+  },
+};
+
+// Update the body1 typography variant with breakpoints
+theme.typography.body1 = {
+  ...theme.typography.body1,
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.875rem',
+  },
+};
 
 export default theme;
